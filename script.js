@@ -11,8 +11,8 @@ function staticLoadPlaces() {
         {
             name: 'Pokèmon',
             location: {
-                lat: 25.78055556,
-                lng: 28.27861111,
+                lat: 25.75277778,
+                lng: 28.26944444,
             },
         },
     ];
@@ -24,18 +24,21 @@ var models = [
         scale: '0.5 0.5 0.5',
         info: 'Magnemite, Lv. 5, HP 10/10',
         rotation: '0 180 0',
+        position: '5 5 5',
     },
     {
         url: './assets/articuno/scene.gltf',
         scale: '0.2 0.2 0.2',
         rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
+        position: '5 5 5',
     },
     {
         url: './assets/dragonite/scene.gltf',
         scale: '0.08 0.08 0.08',
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
+        position: '5 5 5',
     },
 ];
 
@@ -50,7 +53,7 @@ var setModel = function (model, entity) {
     }
 
     if (model.position) {
-        entity.setAttribute('position', '10 10 13');
+        entity.setAttribute('position', model.position);
     }
 
     entity.setAttribute('gltf-model', model.url);
