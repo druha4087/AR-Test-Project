@@ -13,8 +13,8 @@ function staticLoadPlaces() {
             location: {
                 lat: 25.73611111,
                 lng: 28.25277778,
-                plt: 25.73611110,
-                pln: 28.25277777,
+                plt: 25.73611113,
+                pln: 28.25277781,
             },
         },
     ];
@@ -29,7 +29,7 @@ var models = [
     },
     {
         url: './assets/articuno/scene.gltf',
-        scale: '1 1 1',
+        scale: '0.2 0.2 0.2',
         rotation: '0 180 0',
         info: 'Articuno, Lv. 80, HP 100/100',
     },
