@@ -70,7 +70,7 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: 25.73888889; longitude: 28.25555556;`);
+        model.setAttribute('gps-entity-place', `latitude: 25.73666667; longitude: 28.25333333;`);
 
         setModel(models[modelIndex], model);
 
