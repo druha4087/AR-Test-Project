@@ -50,7 +50,7 @@ var setModel = function (model, entity) {
     }
 
     if (model.position) {
-        entity.setAttribute('position', model.position);
+        entity.setAttribute('position', '3 0 3');
     }
 
     entity.setAttribute('gltf-model', model.url);
