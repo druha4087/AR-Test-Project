@@ -73,6 +73,9 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${pokemon_latitude}; longitude: ${pokemon_longitude};`);
 
+        const div1 = document.querySelector('.instructions');
+        div1.innerText = pokemon_latitude;
+
         setModel(models[modelIndex], model);
 
         model.setAttribute('animation-mixer', '');
