@@ -13,6 +13,8 @@ function staticLoadPlaces() {
             location: {
                 lat: 25.73611111,
                 lng: 28.25277778,
+                plt: 25.73611110,
+                pln: 28.25277777,
             },
         },
     ];
@@ -65,9 +67,11 @@ function renderPlaces(places) {
     places.forEach((place) => {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
+        let pokemon_latitude = place.location.plt;
+        let pokemon_longitude = place.location.pln;
 
         let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: 25.73611112; longitude: 28.25277779;`);
+        model.setAttribute('gps-entity-place', `latitude: ${pokemon_latitude}; longitude: ${pokemon_longitude};`);
 
         setModel(models[modelIndex], model);
 
